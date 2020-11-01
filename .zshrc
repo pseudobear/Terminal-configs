@@ -1,3 +1,4 @@
+# all them history configurations
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=2000
 SAVEHIST=2000
@@ -14,3 +15,13 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
 setopt HIST_BEEP                 # Beep when accessing nonexistent history.
+
+# adding some of those spicy scripts
+path+=~/bin/
+
+# jazzing everything up
+PROMPT='%F{183}%n%f@%m %F{159}%~%f %# '
+RPROMPT='%t'
+
+export LSCOLORS=GxFxCxDxbxegedabagaced
+export CLICOLOR=1
