@@ -20,8 +20,18 @@ setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 path+=~/bin/
 
 # jazzing everything up
-PROMPT='%F{183}%n%f@%m %F{159}%~%f %# '
+PROMPT='%F{75}%n%f@%m %F{159}%~%f %# '
 RPROMPT='%t'
 
 export LSCOLORS=GxFxCxDxbxegedabagaced
 export CLICOLOR=1
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+#tab completions for flags for colorls
+source $(dirname $(gem which colorls))/tab_complete.sh
+
+# aliases for colorls
+alias lc='colorls -lA --sd'
+alias ls='colorls'
+
