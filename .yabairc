@@ -29,17 +29,19 @@ yabai -m config window_shadow float
 # ########### #
 
 # Floating certain windows
-yabai -m rule --add app="^System Preferences$" manage=off
-yabai -m rule --add app="^Finder$" manage=off
-yabai -m rule --add app="^Activity Monitor$" manage=off
-yabai -m rule --add app="^Messages$" manage=off
-yabai -m rule --add app="^Mail$" manage=off
-yabai -m rule --add app="^Preview$" manage=off
-yabai -m rule --add app="^Riot Client$" manage=off
-yabai -m rule --add app="^League of Legends$" manage=off
-yabai -m rule --add app="^Logitech G HUB$" manage=off
-yabai -m rule --add app="^osu!$" manage=off
-yabai -m rule --add app="^QuickTime Player$" manage=off
+#   DEPRECATED RULES
+#   yabai -m rule --add app="^System Preferences$" manage=off
+#   yabai -m rule --add app="^Finder$" manage=off
+#   yabai -m rule --add app="^Activity Monitor$" manage=off
+#   yabai -m rule --add app="^Messages$" manage=off
+#   yabai -m rule --add app="^Mail$" manage=off
+#   yabai -m rule --add app="^Preview$" manage=off
+#   yabai -m rule --add app="^Riot Client$" manage=off
+#   yabai -m rule --add app="^League of Legends$" manage=off
+#   yabai -m rule --add app="^Logitech G HUB$" manage=off
+#   yabai -m rule --add app="^osu!$" manage=off
+#   yabai -m rule --add app="^QuickTime Player$" manage=off
+yabai -m rule --add app!="^(Chrome|Discord|iTerm2)$" manage=off
 
 # Starting certain windows fullscreen
 # todo: discord (maybe), all adobe apps
