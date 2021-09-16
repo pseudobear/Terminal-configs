@@ -6,8 +6,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'joshdick/onedark.vim'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'sheerun/vim-polyglot'
-  Plug 'severin-lemaignan/vim-minimap'
+  Plug 'lervag/vimtex'
 call plug#end()
+
+let g:polyglot_disabled = ['latex']
+let g:vimtex_view_method='zathura'
 
 syntax on 
 
@@ -33,6 +36,7 @@ set ruler
 set modeline
 set number
 set tabstop=2
+set shiftwidth=2
 set softtabstop=2
 set expandtab
 set showcmd
@@ -42,4 +46,3 @@ set noshowmode
 
 command Reload source ~/.vimrc
 command Hex %!xxd
-command HexReverse %!xxd -r
