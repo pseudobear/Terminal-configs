@@ -5,10 +5,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'itchyny/lightline.vim'
   Plug 'joshdick/onedark.vim'
   Plug 'christoomey/vim-tmux-navigator'
+  Plug 'hashivim/vim-terraform'
 "  Plug 'sheerun/vim-polyglot'
-  Plug 'lervag/vimtex'
-  Plug 'sirver/ultisnips' 
-  Plug 'honza/vim-snippets'
 call plug#end()
 
 let g:polyglot_disabled = ['latex']
@@ -39,6 +37,7 @@ colorscheme onedark
 set lazyredraw
 set ttyfast
 set nowrap
+set bri
 set ruler
 set modeline
 set number
@@ -49,6 +48,7 @@ set expandtab
 set showcmd
 set hlsearch
 set laststatus=2
+set autoindent
 set noshowmode
 
 command Reload source ~/.vimrc

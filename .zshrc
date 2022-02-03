@@ -16,8 +16,9 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
 setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 
-# Ease of use variables
-PSV="142.93.149.115"
+# fix for command:13: error
+autoload -Uz compinit
+compinit
 
 # adding some of those spicy scripts
 path+=~/bin/
@@ -31,10 +32,18 @@ export CLICOLOR=1
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-#tab completions for flags for colorls
+# tab completions for flags for colorls
 source $(dirname $(gem which colorls))/tab_complete.sh
 
 # aliases for colorls
 alias lc='colorls -lA --sd'
 alias ls='colorls'
 
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
+
+eval $(thefuck --alias)
+
+alias tkp="tmux kill-pane"
+alias tkw="tmux kill-window"
