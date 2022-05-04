@@ -38,3 +38,6 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 alias lc='colorls -lA --sd'
 alias ls='colorls'
 
+alias tkp="tmux kill-pane"
+alias tkw="tmux kill-window"
+
