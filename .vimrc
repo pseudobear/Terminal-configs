@@ -1,24 +1,27 @@
 set nocompatible 
 
 call plug#begin('~/.vim/plugged')
-"  Plug 'ycm-core/YouCompleteMe'
+  Plug 'ycm-core/YouCompleteMe'
   Plug 'itchyny/lightline.vim'
   Plug 'joshdick/onedark.vim'
   Plug 'christoomey/vim-tmux-navigator'
-"  Plug 'sheerun/vim-polyglot'
+  Plug 'ervandew/supertab'
   Plug 'lervag/vimtex'
   Plug 'sirver/ultisnips' 
   Plug 'honza/vim-snippets'
 call plug#end()
 
-let g:polyglot_disabled = ['latex']
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 set conceallevel=1
 let g:tex_conceal='abdmg'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:ycm_max_num_identifier_candidates = 3
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
 syntax on 
 
 " onedark.vim override: Don't set a background color when running in a
