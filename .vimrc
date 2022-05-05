@@ -5,24 +5,24 @@ call plug#begin('~/.vim/plugged')
   Plug 'itchyny/lightline.vim'
   Plug 'joshdick/onedark.vim'
   Plug 'christoomey/vim-tmux-navigator'
-  Plug 'ervandew/supertab'
-  Plug 'lervag/vimtex'
-  Plug 'sirver/ultisnips' 
-  Plug 'honza/vim-snippets'
+"  Plug 'ervandew/supertab'
+"  Plug 'lervag/vimtex'
+"  Plug 'sirver/ultisnips' 
+"  Plug 'honza/vim-snippets'
 call plug#end()
 
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=0
-set conceallevel=1
-let g:tex_conceal='abdmg'
-let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
-let g:ycm_max_num_identifier_candidates = 3
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
-syntax on 
+"let g:vimtex_view_method='zathura'
+"let g:vimtex_quickfix_mode=0
+"set conceallevel=1
+"let g:tex_conceal='abdmg'
+"jlet g:UltiSnipsExpandTrigger = '<tab>'
+"jlet g:UltiSnipsJumpForwardTrigger = '<tab>'
+"jlet g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+"jlet g:ycm_max_num_identifier_candidates = 3
+"jlet g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+"jlet g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+"jlet g:SuperTabDefaultCompletionType = '<C-n>'
+"jsyntax on 
 
 " onedark.vim override: Don't set a background color when running in a
 " terminal;

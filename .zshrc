@@ -16,9 +16,6 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
 setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 
-# Ease of use variables
-PSV="142.93.149.115"
-
 # adding some of those spicy scripts
 path+=~/bin/
 
@@ -29,15 +26,4 @@ RPROMPT='%t'
 export LSCOLORS=GxFxCxDxbxegedabagaced
 export CLICOLOR=1
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-#tab completions for flags for colorls
-source $(dirname $(gem which colorls))/tab_complete.sh
-
-# aliases for colorls
-alias lc='colorls -lA --sd'
-alias ls='colorls'
-
-alias tkp="tmux kill-pane"
-alias tkw="tmux kill-window"
-
+alias ls='ls --color=auto'
