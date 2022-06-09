@@ -24,6 +24,7 @@ let g:ycm_max_num_identifier_candidates = 3
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
+let g:vim_markdown_math = 1
 syntax on 
 
 " onedark.vim override: Don't set a background color when running in a
