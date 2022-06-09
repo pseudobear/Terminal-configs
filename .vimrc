@@ -9,6 +9,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'lervag/vimtex'
   Plug 'sirver/ultisnips' 
   Plug 'honza/vim-snippets'
+  Plug 'godlygeek/tabular'
+  Plug 'preservim/vim-markdown'
 call plug#end()
 
 let g:vimtex_view_method='zathura'
