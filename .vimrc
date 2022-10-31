@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'honza/vim-snippets'
   Plug 'godlygeek/tabular'
   Plug 'preservim/vim-markdown'
+  Plug 'ap/vim-css-color'
 call plug#end()
 
 let g:vimtex_view_method='zathura'

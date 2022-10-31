@@ -17,7 +17,7 @@ yabai -m config right_padding  15
 yabai -m config window_gap     15
 
 # Makes space for the ubersicht bar
-yabai -m config external_bar all:36:0
+yabai -m config external_bar all:26:0
 
 # modify window shadows (default: on, options: on, off, float)
 # example: show shadows only for floating windows
@@ -52,6 +52,7 @@ yabai -m config window_shadow float
    yabai -m rule --add app="^System Information$" manage=off
    yabai -m rule --add app="^App Store$" manage=off
    yabai -m rule --add app="^Calendar$" manage=off
+   yabai -m rule --add app="^Digital Color Meter$" manage=off
 # yabai -m rule --add app!="^(Google Chrome|Discord|iTerm2|Spotify|Visual Studio Code)$" manage=off
 
 # Making terminal more square with solid back color
