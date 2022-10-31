@@ -1,0 +1,22 @@
+font:
+  normal:
+    family: Liga SFMono Nerd Font
+    style: Regular
+  bold:
+    family: Liga SFMono Nerd Font
+    style: Bold
+
+  italic:
+    family: Liga SFMono Nerd Font
+    style: Italic
+  bold_italic:
+    family: Liga SFMono Nerd Font
+    style: Bold Italic
+  size: 16.0
+  offset:
+    x: 1
+    y: 1
+  glyph_offset:
+    y: 1
+    x: 0
+  use_thin_strokes: false
