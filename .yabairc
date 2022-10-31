@@ -1,3 +1,8 @@
+# scripting addition
+
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
 # Sets yabai to be tiling
 yabai -m config layout bsp
 
@@ -48,6 +53,10 @@ yabai -m config window_shadow float
    yabai -m rule --add app="^App Store$" manage=off
    yabai -m rule --add app="^Calendar$" manage=off
 # yabai -m rule --add app!="^(Google Chrome|Discord|iTerm2|Spotify|Visual Studio Code)$" manage=off
+
+# Making terminal more square with solid back color
+#yabai -m rule --add app="^iTerm" border=on
+#yabai -m config window_border_width 11
 
 # Starting certain windows fullscreen
 # todo: discord (maybe), all adobe apps
