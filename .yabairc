@@ -36,6 +36,7 @@ yabai -m config window_shadow float
 # Floating certain windows
    yabai -m rule --add app="^System Preferences$" manage=off
    yabai -m rule --add app="^Finder$" manage=off
+   yabai -m rule --add app="^Audio MIDI Setup$" manage=off
    yabai -m rule --add app="^Activity Monitor$" manage=off
    yabai -m rule --add app="^Messages$" manage=off
    yabai -m rule --add app="^Mail$" manage=off

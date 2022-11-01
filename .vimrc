@@ -2,9 +2,9 @@ set nocompatible
 
 call plug#begin('~/.vim/plugged')
   Plug 'ycm-core/YouCompleteMe'
-  Plug 'itchyny/lightline.vim'
   Plug 'joshdick/onedark.vim'
   Plug 'christoomey/vim-tmux-navigator'
+  Plug 'itchyny/lightline.vim'
   Plug 'ervandew/supertab'
   Plug 'lervag/vimtex'
   Plug 'sirver/ultisnips' 
@@ -44,6 +44,21 @@ if (has("autocmd") && !has("gui_running"))
   augroup END
 endif
 colorscheme onedark
+
+" status line configs
+let g:lightline = { 'colorscheme' : 'wombat' }
+autocmd VimEnter * call SetupLightlineColors()
+function SetupLightlineColors() abort
+  let l:pallete = lightline#palette()
+  let l:pallete.normal.left[1][3] = 'NONE'
+  let l:pallete.normal.right[1][3] = 'NONE'
+  let l:pallete.normal.middle[0][3] = 'NONE'
+  let l:pallete.insert.left[1][3] = 'NONE'
+  let l:pallete.visual.left[1][3] = 'NONE'
+  let l:pallete.replace.left[1][3] = 'NONE'
+  call lightline#colorscheme()
+endfunction
+
 
 set lazyredraw
 set ttyfast
