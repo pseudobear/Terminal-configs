@@ -17,11 +17,12 @@ yabai -m config right_padding  15
 yabai -m config window_gap     15
 
 # Makes space for the ubersicht bar
-yabai -m config external_bar all:26:0
+yabai -m config external_bar all:30:0
 
 # modify window shadows (default: on, options: on, off, float)
 # example: show shadows only for floating windows
 yabai -m config window_shadow float
+yabai -m config window_topmost on
 
 # window opacity (default: off)
 # example: render all unfocused windows with 90% opacity
@@ -34,26 +35,27 @@ yabai -m config window_shadow float
 # ########### #
 
 # Floating certain windows
-   yabai -m rule --add app="^System Preferences$" manage=off
-   yabai -m rule --add app="^Finder$" manage=off
-   yabai -m rule --add app="^Audio MIDI Setup$" manage=off
-   yabai -m rule --add app="^Activity Monitor$" manage=off
-   yabai -m rule --add app="^Messages$" manage=off
-   yabai -m rule --add app="^Mail$" manage=off
-   yabai -m rule --add app="^Preview$" manage=off
-   yabai -m rule --add app="^Riot Client$" manage=off
-   yabai -m rule --add app="^League of Legends$" manage=off
-   yabai -m rule --add app="^Logitech G HUB$" manage=off
-   yabai -m rule --add app="^osu!$" manage=off
-   yabai -m rule --add app="^QuickTime Player$" manage=off
-   yabai -m rule --add app="^OctoType$" manage=off
-   yabai -m rule --add app="^dotnet$" manage=off
-   yabai -m rule --add app="^Photo Booth$" manage=off
-   yabai -m rule --add app="^macfeh$" manage=off
-   yabai -m rule --add app="^System Information$" manage=off
-   yabai -m rule --add app="^App Store$" manage=off
-   yabai -m rule --add app="^Calendar$" manage=off
-   yabai -m rule --add app="^Digital Color Meter$" manage=off
+ yabai -m rule --add app="^System Preferences$" manage=off
+ yabai -m rule --add app="^Finder$" manage=off
+ yabai -m rule --add app="^Audio MIDI Setup$" manage=off
+ yabai -m rule --add app="^Activity Monitor$" manage=off
+ yabai -m rule --add app="^Messages$" manage=off
+ yabai -m rule --add app="^Mail$" manage=off
+ yabai -m rule --add app="^Preview$" manage=off
+ yabai -m rule --add app="^Riot Client$" manage=off
+ yabai -m rule --add app="^League of Legends$" manage=off
+ yabai -m rule --add app="^Logitech G HUB$" manage=off
+ yabai -m rule --add app="^osu!$" manage=off
+ yabai -m rule --add app="^QuickTime Player$" manage=off
+ yabai -m rule --add app="^OctoType$" manage=off
+ yabai -m rule --add app="^dotnet$" manage=off
+ yabai -m rule --add app="^Photo Booth$" manage=off
+ yabai -m rule --add app="^macfeh$" manage=off
+ yabai -m rule --add app="^System Information$" manage=off
+ yabai -m rule --add app="^App Store$" manage=off
+ yabai -m rule --add app="^Calendar$" manage=off
+ yabai -m rule --add app="^Digital Color Meter$" manage=off
+ yabai -m rule --add app="^Web Inspector" manage=off
 # yabai -m rule --add app!="^(Google Chrome|Discord|iTerm2|Spotify|Visual Studio Code)$" manage=off
 
 # Making terminal more square with solid back color
