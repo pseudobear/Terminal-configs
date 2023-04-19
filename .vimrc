@@ -6,12 +6,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'itchyny/lightline.vim'
   Plug 'ervandew/supertab'
-  Plug 'lervag/vimtex'
   Plug 'sirver/ultisnips' 
   Plug 'honza/vim-snippets'
   Plug 'godlygeek/tabular'
-  Plug 'preservim/vim-markdown'
-  Plug 'ap/vim-css-color'
+  Plug 'ludovicchabant/vim-gutentags'
 call plug#end()
 
 let g:vimtex_view_method='zathura'

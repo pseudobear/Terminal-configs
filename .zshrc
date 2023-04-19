@@ -2,6 +2,9 @@
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=2000
 SAVEHIST=2000
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 setopt BANG_HIST                 # Treat the '!' character specially during expansion.
 setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed;command" format.
 setopt INC_APPEND_HISTORY        # Write to the history file immediately, not when the shell exits.
@@ -21,6 +24,7 @@ PSV="142.93.149.115"
 
 # adding some of those spicy scripts
 path+=~/bin/
+path+=~/julia-1.8.1/bin
 
 # jazzing everything up
 PROMPT='%F{75}%n%f@%m %F{159}%~%f %# '
@@ -38,6 +42,24 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 alias lc='colorls -lA --sd'
 alias ls='colorls'
 
+alias ll='colorls -l'
+
 alias tkp="tmux kill-pane"
 alias tkw="tmux kill-window"
 
+# look at pickle file
+alias pvw="python3 -mpickle "
+
+# Replace ".bash" with your shell if you're not using bash
+# Possible values are: setup.bash, setup.sh, setup.zsh
+source /opt/ros/humble/setup.zsh
+source ~/dev/wall_panels/bb_ws/install/setup.zsh
+source ~/dev/base_ws/install/setup.zsh
+
+eval $(thefuck --alias)
+
+export FAST_DOWNWARD_PATH='/home/fakebear/dev/wall_panels/downward'
+export CXXFLAGS="$CXXFLAGS -std=c++14"
+
+bindkey -v
+bindkey '^R' history-incremental-search-backward
